@@ -1,3 +1,1 @@
-```cmd
-vcpkg install --triplet x64-windows
-```
+just run cmake on VS Code
