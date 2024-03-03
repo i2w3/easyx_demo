@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.27)
-project(MyDino LANGUAGES CXX VERSION 0.0.1)
+project(easyx_demo LANGUAGES CXX VERSION 0.0.1)
 # 设置CXX标准为CXX 17
 set(CMAKE_CXX_STANDARD 17)
 # 要求编译器必须支持CXX 17
@@ -13,6 +13,6 @@ link_directories(./easyx240225/lib64)
 # 获取某目录下的所有源文件
 aux_source_directory(./src SRC)
 # 生成可执行文件
-add_executable(MyDino ${SRC})
+add_executable(${PROJECT_NAME} ${SRC})
 add_compile_options(-Wall)
-target_link_libraries(MyDino easyx)
+target_link_libraries(${PROJECT_NAME} easyx)
