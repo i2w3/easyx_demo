@@ -1,2 +1,2 @@
 # REQUIRED
-USE [TDM-GCC](https://jmeubank.github.io/tdm-gcc/download/)
+USE [TDM-GCC](https://jmeubank.github.io/tdm-gcc/download/), must to use CXX
