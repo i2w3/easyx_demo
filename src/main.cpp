@@ -1,41 +1,14 @@
-#include <iostream>
+#include <conio.h>
+#include <stdio.h>
 
-#include <fmt/core.h>
-#include <glog/logging.h>
-#include <opencv2/opencv.hpp>
-#include <opencv2/core/utils/logger.hpp>
-#include <QGuiApplication>
-#include <QQmlApplicationEngine>
-
-#include "utils.h"
+#include "../easyx240225/include/graphics.h"		// 引用图形库头文件
 
 int main()
 {
-    std::cout << "Hello World by std!" << std::endl;
-    fmt::print("Hello World by fmt!\n");
-
-    google::InitGoogleLogging("MyDino");
-    cv::utils::logging::setLogLevel(cv::utils::logging::LOG_LEVEL_ERROR);
-
-
-    LOG(INFO) << "Info message";
-    LOG(WARNING) << "Warning Message";
-    // LOG(ERROR) << "Error Message";
-    // LOG(FATAL) << "Fatal Message"; // 会自动关闭程序
-    cv::Mat img = cv::imread("./res/test.jpg");
-    if (img.empty())
-	{
-		std::cout << "Not found Image!" << std::endl;
-		return -1;
-	}
-    cv::namedWindow("img", cv::WINDOW_NORMAL);
-    cv::resizeWindow("img", img.cols, img.rows);
-    cv::imshow("img", img);
-    cv::waitKey(0);
-    cv::destroyAllWindows();
-    //打开本地0号摄像头播放
-	OpenAndPlayLocalCamera(0); 
-    system("pause");
-    google::ShutdownGoogleLogging();
+    printf("Hello, world\n");
+    initgraph(640, 480);	// 创建绘图窗口，大小为 640x480 像素
+	circle(200, 200, 100);	// 画圆，圆心(200, 200)，半径 100
+	_getch();				// 按任意键继续
+	closegraph();			// 关闭绘图窗口
     return 0;
 }

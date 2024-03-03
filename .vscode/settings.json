@@ -1,0 +1,18 @@
+{
+    "editor.fontFamily": "Source Code Pro",
+    "editor.fontSize": 14,
+    "files.associations": {
+        "stdio.h": "c",
+        "stdbool.h": "c",
+        "utils.h": "c",
+        "unit.h": "c"
+    },
+    "cmake.generator": "MinGW Makefiles",
+    "cmake.allowCommentsInPresetsFile": true,
+    "cmake.options.statusBarVisibility": "icon",
+    "C_Cpp.loggingLevel": "Error",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.cStandard": "c11",
+    "C_Cpp.default.intelliSenseMode": "windows-gcc-x64",
+    "cmake.buildDirectory": "${workspaceFolder}/build"
+}
