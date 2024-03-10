@@ -9,7 +9,9 @@
 
 #pragma once
 
-#include "easyx.h"
+#include <easyx.h>
+
+
 
 // Old Window Properties
 #define SHOWCONSOLE		1		// Maintain the console window when creating a graphics window

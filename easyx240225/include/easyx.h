@@ -33,7 +33,7 @@
 
 #include <windows.h>
 #include <tchar.h>
-#include <stdbool.h>
+
 // EasyX Window Properties
 #define EX_SHOWCONSOLE		1		// Maintain the console window when creating a graphics window
 #define EX_NOCLOSE			2		// Disable the close button
